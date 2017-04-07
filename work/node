@@ -1,0 +1,27 @@
+```
+var data = ' fade away.';
+
+ fs.writeFile('soldier.txt', data, function(err) {
+     if (err) {
+        console.log(err);
+     } else {
+         console.log('success.')
+     }
+ })
+
+fs.readFile('soldier.txt', function(err, file) {
+     if (err) {
+        return console.error(err);
+    }
+     console.log('文件读取完毕');
+ });
+ console.log('发起读取文件');
+ 
+ http.createServer(function (request, response) {
+    response.writeHead(200, {'Content-Type': 'text/plain'});
+	 "Hello World"
+    response.end('Hello\n');
+}).listen(8888);
+console.log('Server running at http://127.0.0.1:8888/');
+
+```
